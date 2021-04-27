@@ -16,7 +16,6 @@ open Android.Runtime
 open Android.OS
 open Xamarin.Forms.Platform.Android
 
-open NineWavesApp
 
 [<Activity(Label = "NineWaves",
            Icon = "@mipmap/icon",

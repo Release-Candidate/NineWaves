@@ -7,16 +7,12 @@
 //
 //==============================================================================
 
-namespace NineWaves.iOS
+namespace NineWaves.IOS
 
-open System
 open UIKit
 open Foundation
 open Xamarin.Forms
 open Xamarin.Forms.Platform.iOS
-
-open NineWavesApp
-
 
 
 [<Register("AppDelegate")>]
