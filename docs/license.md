@@ -1,6 +1,6 @@
 # License
 
-Fabulous-TEMPLATE is licensed under the MIT license:
+NineWaves is licensed under the MIT license:
 
 ```text
 

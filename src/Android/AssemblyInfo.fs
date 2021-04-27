@@ -2,12 +2,12 @@
 // Copyright 2018 Fabulous contributors.
 // Copyright 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE.Android
+// Project:  Android
 // File:     AssemblyInfo.fs
 //
 //==============================================================================
 
-namespace Fabulous-TEMPLATE.Android
+namespace NineWaves.Android
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -15,18 +15,18 @@ open System.Runtime.InteropServices
 open Android.App
 
 // the name of the type here needs to match the name inside the ResourceDesigner attribute
-type Resources = Fabulous-TEMPLATE.Android.Resource
+type Resources = Android.Resource
 
-[<assembly: Android.Runtime.ResourceDesigner("Fabulous-TEMPLATE.Android.Resources", IsApplication = true)>]
+[<assembly: Android.Runtime.ResourceDesigner("Android.Resources", IsApplication = true)>]
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("Fabulous-TEMPLATE")>]
+[<assembly: AssemblyTitle("NineWaves")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("Fabulous-TEMPLATE")>]
+[<assembly: AssemblyProduct("NineWaves")>]
 [<assembly: AssemblyCopyright("Copyright © 2021 Roland Csaszar")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]

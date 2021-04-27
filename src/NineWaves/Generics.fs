@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE
+// Project:  NineWaves
 // File:     Generics.fs
 // Date:     4/15/2021 9:20:59 PM
 //==============================================================================

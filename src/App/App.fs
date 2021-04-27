@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE
+// Project:  NineWaves
 // File:     app.fs
 //
 //==============================================================================
 
-/// The namespace of the IOS and Android Fabulous-TEMPLATE
+/// The namespace of the IOS and Android NineWaves
 /// app.
-namespace Fabulous-TEMPLATE
+namespace NineWavesApp
 
 open System.Diagnostics
 open Fabulous

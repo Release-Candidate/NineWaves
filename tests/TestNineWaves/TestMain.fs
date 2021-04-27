@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE
+// Project:  NineWaves
 // File:     TestMain.fs
 //
 //==============================================================================
 
-namespace TestFabulous-TEMPLATE
+namespace TestNineWaves
 
 open Expecto
 

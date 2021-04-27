@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (C) 2021 Roland Csaszar
 #
-# Project:  Fabulous-TEMPLATE
+# Project:  NineWaves
 # File:     get_changelog.sh
 #
 ################################################################################

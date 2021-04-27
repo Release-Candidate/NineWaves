@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  TestFabulous-TEMPLATE
+// Project:  TestNineWaves
 // File:     Generic.fs
 // Date:     4/24/2021 1:11:17 PM
 //==============================================================================
 
 
-namespace TestFabulous-TEMPLATE
+namespace TestNineWaves
 
 open Expecto
 open Swensen.Unquote
@@ -20,7 +20,7 @@ open RC.Maya
 [<AutoOpen>]
 module Generic=
 
-    let private logger = Log.create "Fabulous-Template"
+    let private logger = Log.create "NineWaves"
 
     let private loggerFunc logFunc moduleName name no args =
          logFunc (

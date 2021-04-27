@@ -21,22 +21,22 @@
   <PropertyGroup>
     <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>Fabulous-TEMPLATE</PackageId>
+    <PackageId>NineWaves</PackageId>
     <PackageLicenseFile></PackageLicenseFile>
-    <PackageProjectUrl>https://tzolkin.readthedocs.io/en/latest/nuget_package/</PackageProjectUrl>
+    <PackageProjectUrl>https://ninewaves.readthedocs.io/en/latest/</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <NeutralLanguage>es</NeutralLanguage>
+    <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/Release-Candidate/Tzolkin</RepositoryUrl>
-    <Version>0.9.17</Version>
+    <RepositoryUrl>https://github.com/Release-Candidate/NineWaves</RepositoryUrl>
+    <Version>0.9.1</Version>
     <Authors>Roland Csaszar</Authors>
     <Company>Release-Candidate</Company>
-    <Product>Fabulous-TEMPLATE</Product>
+    <Product>NineWaves</Product>
     <Copyright>(c) 2021 Roland Csaszar</Copyright>
     <PackageIcon>nuget_icon.png</PackageIcon>
-    <PackageTags>Fabulous-TEMPLATE</PackageTags>
+    <PackageTags>NineWaves</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <Description>Fabulous-TEMPLATE</Description>
+    <Description>NineWaves is a F# library to calculate and display the nine Maya waves of Calleman.</Description>
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />

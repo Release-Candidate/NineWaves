@@ -1,7 +1,7 @@
 :: SPDX-License-Identifier: MIT
 :: Copyright (C) 2021 Roland Csaszar
 ::
-:: Project:  Fabulous-TEMPLATE
+:: Project:  NineWaves
 :: File:     run_coverage.bat
 :: Date:     25.Apr.2021
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

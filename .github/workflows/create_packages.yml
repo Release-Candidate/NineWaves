@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (C) 2021 Roland Csaszar
 #
-# Project:  Fabulous-TEMPLATE
+# Project:  NineWaves
 # File:     create_packages.yml
 #
 ################################################################################
@@ -82,7 +82,7 @@ jobs:
       #    tag: ${{ github.ref }}
       #    file_glob: false
       #    asset_name: NuGet Package
-      #    file: ./packages/Fabulous-TEMPLATE.nupkg
+      #    file: ./packages/NineWaves.nupkg
 
       - name: Upload
         run: |

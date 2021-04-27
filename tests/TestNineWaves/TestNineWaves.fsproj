@@ -24,7 +24,6 @@
     <Compile Include="Generic.fs" />
     <Compile Include="TestMain.fs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="AltCover" Version="8.1.819" />
     <PackageReference Include="Expecto" Version="9.*" />

@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (C) 2021 Roland Csaszar
 #
-# Project:  Fabulous-TEMPLATE
+# Project:  NineWaves
 # File:     linux_test.yml
 #
 ################################################################################
@@ -83,7 +83,7 @@ jobs:
       - name: Run Tests
         run: |
           cd $GITHUB_WORKSPACE
-          dotnet ./bin/Fabulous-TEMPLATE.dll --summary --nunit-summary ./test_results/nresult.xml --junit-summary ./test_results/jresult.xml
+          dotnet ./bin/TestNineWaves.dll --summary --nunit-summary ./test_results/nresult.xml --junit-summary ./test_results/jresult.xml
 
       - uses: actions/upload-artifact@v2
         if: ${{ always() }}

@@ -2,12 +2,12 @@
 // Copyright 2018 Fabulous contributors.
 // Copyright 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE.Android
+// Project:  Android
 // File:     MainActivity.fs
 //
 //==============================================================================
 
-namespace Fabulous-TEMPLATE.Android
+namespace NineWaves.Android
 
 open System
 open Android.App
@@ -16,9 +16,9 @@ open Android.Runtime
 open Android.OS
 open Xamarin.Forms.Platform.Android
 
-open Fabulous-TEMPLATE
+open NineWavesApp
 
-[<Activity(Label = "Fabulous-TEMPLATE",
+[<Activity(Label = "NineWaves",
            Icon = "@mipmap/icon",
            RoundIcon = "@mipmap/icon_round",
            Theme = "@style/MainTheme",
@@ -38,7 +38,7 @@ type MainActivity () =
         Xamarin.Forms.Forms.Init (this, bundle)
         //x Xamarin.Essentials.VersionTracking.Track ()
 
-        this.LoadApplication (Fabulous-TEMPLATE.App ())
+        this.LoadApplication (NineWaves.App.App ())
 
     override this.OnRequestPermissionsResult
         (

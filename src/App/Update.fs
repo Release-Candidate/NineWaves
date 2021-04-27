@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE
+// Project:  NineWaves
 // File:     Update.fs
 // Date:     4/22/2021 12:00:09 PM
 //==============================================================================
 
-/// The namespace of the IOS and Android Fabulous-TEMPLATE app.
-namespace Fabulous-TEMPLATE
+/// The namespace of the IOS and Android NineWaves app.
+namespace NineWavesApp
 
 open System
 open Fabulous
@@ -29,7 +29,7 @@ module Update=
     /// <returns>The updated model and `cmdDateListViewHeight`</returns>
     let setCurrPage model page =
         { model with CurrentPage = page },
-        cmdDateListViewHeight
+        Cmd.none
 
     /// <summary>
     /// The update function of MVU.

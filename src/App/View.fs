@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE
+// Project:  NineWaves
 // File:     View.fs
 // Date:     4/10/2021 9:03:21 PM
 //==============================================================================
 
 /// The namespace of the IOS and Android Tzolkin app.
-namespace Fabulous-TEMPLATE
+namespace NineWavesApp
 
 open Fabulous.XamarinForms
 open Xamarin.Forms

@@ -6,8 +6,8 @@
 // Date:     4/10/2021 7:50:49 PM
 //==============================================================================
 
-/// The namespace of the IOS and Android Fabulous-TEMPLATE app.
-namespace app
+/// The namespace of the IOS and Android NineWaves app.
+namespace NineWavesApp
 
 
 open Xamarin.Essentials
@@ -97,7 +97,7 @@ module Definitions =
     // Widget references ===========================================================================
     // Instances of widgets needed to interact with.
 
-   
+
 
     // Commands ====================================================================================
     /// <summary>

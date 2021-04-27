@@ -7,7 +7,7 @@
 //
 //==============================================================================
 
-namespace Fabulous-TEMPLATE.iOS
+namespace NineWaves.iOS
 
 open System
 open UIKit
@@ -15,7 +15,7 @@ open Foundation
 open Xamarin.Forms
 open Xamarin.Forms.Platform.iOS
 
-open Fabulous-TEMPLATE
+open NineWavesApp
 
 
 
@@ -26,7 +26,7 @@ type AppDelegate () =
     override this.FinishedLaunching(app, options) =
         Forms.Init ()
 
-        let appcore = new Fabulous-TEMPLATEApp.App ()
+        let appcore = new NineWavesApp.App.App ()
         this.LoadApplication (appcore)
         base.FinishedLaunching (app, options)
 

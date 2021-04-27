@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  Fabulous-TEMPLATE
+// Project:  NineWaves
 // File:     Style.fs
 // Date:     4/10/2021 8:38:40 PM
 //==============================================================================
 
-/// The namespace of the IOS and Android Fabulous-TEMPLATE app.
-namespace Fabulous-TEMPLATE
+/// The namespace of the IOS and Android NineWaves app.
+namespace NineWavesApp
 
 open Fabulous.XamarinForms
 open Xamarin.Forms
