@@ -229,6 +229,18 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App\App.fsproj">
+      <Name>App</Name>
+      <Project>{9307a282-c12a-41d0-a050-038519f00dc7}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NineWaves\NineWaves.fsproj">
+      <Name>NineWaves</Name>
+      <Project>{a1c316a9-0a74-4c11-8026-b7e87f1025c5}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\..\packages\HarfBuzzSharp.2.6.1.7\build\xamarinios1.0\HarfBuzzSharp.targets" Condition="Exists('..\..\packages\HarfBuzzSharp.2.6.1.7\build\xamarinios1.0\HarfBuzzSharp.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -33,6 +33,9 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\NineWaves\NineWaves.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="5.0.1" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0"
-  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props')" />
   <Import Project="..\..\packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.props" Condition="Exists('..\..\packages\Xamarin.AndroidX.Migration.1.0.8\build\monoandroid90\Xamarin.AndroidX.Migration.props')" />
   <Import Project="..\packages\Xamarin.Forms.5.0.0.1874\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.1874\build\Xamarin.Forms.props')" />
@@ -23,11 +22,13 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <SelectedDevice>Pixel_3a_API_30_x86</SelectedDevice>
     <ActiveDebugProfile>Pixel_3a_API_30_x86</ActiveDebugProfile>
     <DefaultDevice>Pixel_3a_API_30_x86</DefaultDevice>
-    <ReferencePath></ReferencePath>
+    <ReferencePath>
+    </ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,7 +37,8 @@
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <PlatformTarget></PlatformTarget>
+    <PlatformTarget>
+    </PlatformTarget>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
     <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
     <AotAssemblies>false</AotAssemblies>
@@ -55,12 +57,14 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <GenerateTailCalls>true</GenerateTailCalls>
-    <PlatformTarget></PlatformTarget>
+    <PlatformTarget>
+    </PlatformTarget>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
@@ -78,7 +82,8 @@
     <AndroidSigningStorePass>SUEVVWi2lDz0QvS4WVRI</AndroidSigningStorePass>
     <AndroidSigningKeyPass>U4HmqYD77xW3MWweVOea</AndroidSigningKeyPass>
     <AndroidLinkTool>r8</AndroidLinkTool>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
     <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
@@ -404,6 +409,18 @@
     <Reference Include="Xamarin.Google.Guava.ListenableFuture">
       <HintPath>..\..\packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.2\lib\monoandroid50\Xamarin.Google.Guava.ListenableFuture.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App\App.fsproj">
+      <Name>App</Name>
+      <Project>{9307a282-c12a-41d0-a050-038519f00dc7}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NineWaves\NineWaves.fsproj">
+      <Name>NineWaves</Name>
+      <Project>{a1c316a9-0a74-4c11-8026-b7e87f1025c5}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\..\packages\HarfBuzzSharp.2.6.1.7\build\monoandroid1.0\HarfBuzzSharp.targets" Condition="Exists('..\..\packages\HarfBuzzSharp.2.6.1.7\build\monoandroid1.0\HarfBuzzSharp.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

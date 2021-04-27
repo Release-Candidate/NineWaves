@@ -38,7 +38,7 @@ type MainActivity () =
         Xamarin.Forms.Forms.Init (this, bundle)
         //x Xamarin.Essentials.VersionTracking.Track ()
 
-        this.LoadApplication (NineWaves.App.App ())
+        this.LoadApplication (NineWavesApp.App.App ())
 
     override this.OnRequestPermissionsResult
         (
