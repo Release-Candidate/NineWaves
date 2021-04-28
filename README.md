@@ -1,15 +1,10 @@
-# ![NineWaves Icon](./src/NineWaves.Android/Resources/mipmap-mdpi/icon.png) NineWaves <!-- omit in toc -->
+# ![NineWaves Icon](./src/Android/Resources/mipmap-hdpi/icon.png) NineWaves <!-- omit in toc -->
 
-This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app converts Maya Tzolk’in dates to Gregorian dates and vice versa.
-
-![Smartphone app screenshot 1](./docs/images/Screenshot_1619523461.jpg)
-![Smartphone app screenshot 2](./docs/images/Screenshot_1619523505.jpg)
-
-If you want to know more about the Maya calendar systems, see [Links](#links).
+This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. See [Links](#links)
 
 Information about the smartphone app is at [Usage of the Smartphone App](#usage-of-the-smartphone-app)
 
-To interactively try out the F# NuGet package NineWaves, go to the Jupyter Notebook 
+To interactively try out the F# NuGet package NineWaves, go to the Jupyter Notebook
 
 Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs.io/en/latest/)
 
@@ -17,8 +12,7 @@ Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs
 [![F# 5.0 badge](https://img.shields.io/badge/F%23-5.0-brightgreen?style=flat)](https://fsharp.org/)
 [![OS badge](https://img.shields.io/badge/Runs%20on-Linux%7COS%20X%7CWindows%7CAndroid%7CIOS-brightgreen?style=flat)](https://dotnet.microsoft.com/download)
 [![Nuget Package badge](https://img.shields.io/nuget/v/NineWaves)](https://www.nuget.org/packages/NineWaves/)
-[![Documentation Status](https://readthedocs.org/projects/NineWaves/badge/?version=latest)](https://NineWaves.readthedocs.io/en/latest/)
-[![Binder badge](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Release-Candidate/NineWaves/main?filepath=NineWaves.ipynb)
+[![Documentation Status](https://readthedocs.org/projects/ninewaves/badge/?version=latest)](https://ninewaves.readthedocs.io/en/latest/?badge=latest)
 [more badges ...](#badges)
 
 ## Table of Content <!-- omit in toc -->
@@ -27,7 +21,7 @@ Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs
 - [Download](#download)
 - [Installation and Usage](#installation-and-usage)
   - [Usage of the Smartphone App](#usage-of-the-smartphone-app)
-  - [NineWaves NuGet Package](#NineWaves-nuget-package)
+  - [NineWaves NuGet Package](#ninewaves-nuget-package)
     - [Install Package & Basic Usage](#install-package--basic-usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -38,7 +32,8 @@ Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs
 
 ## Links
 
-
+[Blog of Carl Johan Calleman](https://calleman.com/blog/)
+[Experiencing the 9th Wave Influence in your Life](https://calleman.com/experiencing-the-9th-wave-influence-in-our-life/)
 
 ## Download
 
