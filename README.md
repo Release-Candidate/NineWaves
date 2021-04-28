@@ -33,6 +33,7 @@ Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs
 ## Links
 
 [Blog of Carl Johan Calleman](https://calleman.com/blog/)
+
 [Experiencing the 9th Wave Influence in your Life](https://calleman.com/experiencing-the-9th-wave-influence-in-our-life/)
 
 ## Download

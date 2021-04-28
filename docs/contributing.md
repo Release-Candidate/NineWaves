@@ -8,7 +8,7 @@ If you encounter a problem using NineWaves, a task it not as easy as you'd like 
   - [Report Issues (Bugs and Feature Requests)](#report-issues-bugs-and-feature-requests)
   - [Forking the Repository](#forking-the-repository)
     - [Github Documentation on Collaborating with Issues and Pull Requests](#github-documentation-on-collaborating-with-issues-and-pull-requests)
-  - [Common Tasks Developing NineWaves](#common-tasks-developing-NineWaves)
+  - [Common Tasks Developing NineWaves](#common-tasks-developing-ninewaves)
     - [Jupyter Notebook](#jupyter-notebook)
     - [Changing and Generating Documentation](#changing-and-generating-documentation)
       - [Installing Dependencies](#installing-dependencies)
@@ -137,7 +137,7 @@ Read the Docs automatically generates the MkDocs documentation after each `git p
 
 #### GitHub Documentation
 
-The Markdown documentation for GitHub are the files [README.md](https://github.com/Release-Candidate/NineWaves-calendar/blob/main/README.md) and [CHANGELOG.md](https://github.com/Release-Candidate/NineWaves-calendar/blob/main/CHANGELOG.md) in the project root directory.
+The Markdown documentation for GitHub are the files [README.md](https://github.com/Release-Candidate/NineWaves/blob/main/README.md) and [CHANGELOG.md](https://github.com/Release-Candidate/NineWaves/blob/main/CHANGELOG.md) in the project root directory.
 
 ## Source Code
 
@@ -202,21 +202,18 @@ The sources of the projects are located in the directors `src`, the tests in `te
 
 There are 4 projects in NineWaves:
 
-- `Fabulous-TEMPLATEDate` - the F# library and NuGet package that does the actual calculations, see [NUget Package](./nuget_package.md) for usage information.
-- `Fabulous-TEMPLATE` - the Fabulous-TEMPLATE smartphone app, the platform independent part of the smartphone app.
-- `Fabulous-TEMPLATE.iOS` - the iOS specific part of the smartphone app.
-- `Fabulous-TEMPLATE.Android` - the Android specific part of the app.
+- `NineWaves` - the F# library and NuGet package that does the actual calculations, see [NuGet Package](./nuget_package.md) for usage information.
+- `App` - the NineWaves smartphone app, the platform independent part of the smartphone app.
+- `IOS` - the iOS specific part of the smartphone app.
+- `Android` - the Android specific part of the app.
 
 #### Test Source
 
-The project `TestFabulous-TEMPLATE` in the directory `tests/TestFabulous-TEMPLATE`: tests the NuGet package library, the project `Fabulous-TEMPLATEDate`.
+The project `TestNineWaves` in the directory `tests/TestNineWaves`: tests the NuGet package library, the project `NineWaves`.
 Files:
 
 - `TestMain.fs` - Expecto's main entry point when called as an executable and not by using `dotnet test`.
 - `Generics.fs` - generic functions used by the actual test functions.
-- `TestFabulous-TEMPLATENumber.fs` - tests the module `Fabulous-TEMPLATENumber`
-- `TestFabulous-TEMPLATEGlyph.fs` - tests the module `NineWavesGlyph`
-- `TestFabulous-TEMPLATEDate.fs` - tests the module `Fabulous-TEMPLATEDate`
 
 ### Build Targets
 
@@ -334,9 +331,8 @@ dotnet fake run build.fsx target TestsCoverage
 
 ## CodeCov Configuration
 
-Generate an account at [CodeCov](https://about.codecov.io/), link your GitHub repositories, add the CodeCov token
-as a secret to the GitHub repositories named `CODECOV_SECRET` and upload the coverage result
-using a GitHub action. Used in the workflows [linux_test.yml](https://github.com/Release-Candidate/NineWaves/blob/main/.github/workflows/linux_test.yml),
+Uploads the coverage result using a GitHub action. Used in the workflows
+[linux_test.yml](https://github.com/Release-Candidate/NineWaves/blob/main/.github/workflows/linux_test.yml),
 [osx_test.yml](https://github.com/Release-Candidate/NineWaves/blob/main/.github/workflows/osx_test.yml) and [windows_test.yml](https://github.com/Release-Candidate/NineWaves/blob/main/.github/workflows/windows_test.yml)
 
 ```yml

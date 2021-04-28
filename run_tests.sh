@@ -8,4 +8,5 @@
 ###############################################################################
 
 dotnet fake run ./build.fsx target publish
+
 dotnet ./bin/NineWaves.dll --summary --nunit-summary ./test_results/nresult.xml --junit-summary ./test_results/jresult.xml
