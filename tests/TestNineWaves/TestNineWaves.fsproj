@@ -21,7 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
-    <Compile Include="Generic.fs" />
+    <Compile Include="TestNineWaves.fs" />
     <Compile Include="TestMain.fs" />
   </ItemGroup>
   <ItemGroup>

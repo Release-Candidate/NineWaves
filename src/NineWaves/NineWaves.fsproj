@@ -36,11 +36,11 @@
     <PackageIcon>nuget_icon.png</PackageIcon>
     <PackageTags>NineWaves</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <Description>NineWaves is a F# library to calculate and display the nine Maya waves of Calleman.</Description>
+    <Description>NineWaves is a F# library to calculate with the nine Maya waves of Carl Johan Calleman</Description>
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
-    <Compile Include="Generics.fs" />
+    <Compile Include="NineWaves.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="5.0.1" />
