@@ -17,7 +17,7 @@ open Xamarin.Forms
 
 
 /// The module holds the IOS and Android app.
-module App =
+module NineWavesApp =
 
 
     // Main App ====================================================================================

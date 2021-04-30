@@ -11,6 +11,6 @@ namespace NineWavesApp
 
 open Xamarin.Forms
 
-[<assembly: ExportFont("NineWaves.ttf")>]
+//[<assembly: ExportFont("NineWaves.ttf")>]
 
 do ()

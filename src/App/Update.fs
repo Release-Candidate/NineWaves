@@ -32,6 +32,30 @@ module Update=
         Cmd.none
 
     /// <summary>
+    /// Message `CarouselChanged`. Called, if the current item in the date view
+    /// carousel has changed.
+    /// </summary>
+    /// <param name="model">The MVU model.</param>
+    /// <param name="args">The `PositionChangedEventArgs`.</param>
+    /// <returns>The unchanged model and `Cmd.none`.</returns>
+    let carChanged model (args: PositionChangedEventArgs) =
+        let direction = args.CurrentPosition - args.PreviousPosition
+
+        match args.PreviousPosition, args.CurrentPosition with
+        | 0, 2 ->
+            { model with
+                    Date = model.Date + System.TimeSpan.FromDays -1. },
+            Cmd.none
+        | 2, 0 ->
+            { model with
+                    Date = model.Date + System.TimeSpan.FromDays 1. },
+            Cmd.none
+        | _, _ ->
+            { model with
+                    Date = model.Date + System.TimeSpan.FromDays (float direction) },
+            Cmd.none
+
+    /// <summary>
     /// The update function of MVU.
     /// </summary>
     /// <param name="msg">The message to process.</param>
@@ -58,3 +82,7 @@ module Update=
             | false -> { model with ShowSystemAppInfo = false }, Cmd.none
 
         | OpenURL url -> model, cmdOpenUrl url
+
+        | SetDate date -> { model with Date = date }, Cmd.none
+
+        | CarouselChanged args -> carChanged model args

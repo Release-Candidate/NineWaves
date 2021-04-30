@@ -82,7 +82,8 @@ module Definitions =
         { CurrentPage: Pages
           IsDarkMode: bool
           IsLandscape: bool
-          ShowSystemAppInfo: bool }
+          ShowSystemAppInfo: bool
+          Date: DateTime }
 
     // The messages ================================================================================
 
@@ -93,6 +94,8 @@ module Definitions =
         | SetOrientation of float * float
         | ShowSystemAppInfo of bool
         | OpenURL of string
+        | SetDate of DateTime
+        | CarouselChanged of PositionChangedEventArgs
 
     // Widget references ===========================================================================
     // Instances of widgets needed to interact with.
@@ -179,7 +182,8 @@ module Definitions =
               else
                   false
           IsLandscape = false
-          ShowSystemAppInfo = false }
+          ShowSystemAppInfo = false
+          Date = DateTime.Today }
 
     /// <summary>
     /// Initialize the model and commands.

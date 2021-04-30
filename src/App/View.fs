@@ -31,7 +31,7 @@ module View =
                          appearing = (fun () -> dispatch <| SetCurrentPage Home),
                          content = View.StackLayout (
                              backgroundColor = Style.backgroundBrownDark,
-                             children = []
+                             children = nineWavePage model dispatch
                          )
 
 
