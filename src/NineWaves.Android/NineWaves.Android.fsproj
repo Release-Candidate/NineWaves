@@ -111,7 +111,7 @@
     <AndroidResource Include="Resources\values\styles.xml" />
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="MainActivity.fs" />
-    <None Include="packages.config" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Fabulous">
@@ -126,6 +126,9 @@
     <Reference Include="Fabulous.XamarinForms.LiveUpdate">
       <HintPath>..\..\packages\Fabulous.XamarinForms.LiveUpdate.1.0.1\lib\netstandard2.0\Fabulous.XamarinForms.LiveUpdate.dll</HintPath>
     </Reference>
+    <Reference Include="Fabulous.XamarinForms.SkiaSharp">
+      <HintPath>..\..\packages\Fabulous.XamarinForms.SkiaSharp.1.0.1\lib\netstandard2.0\Fabulous.XamarinForms.SkiaSharp.dll</HintPath>
+    </Reference>
     <Reference Include="FormsViewGroup">
       <HintPath>..\..\packages\Xamarin.Forms.5.0.0.2012\lib\MonoAndroid10.0\FormsViewGroup.dll</HintPath>
     </Reference>
@@ -138,12 +141,27 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\packages\SkiaSharp.1.68.1.1\lib\MonoAndroid\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Android">
+      <HintPath>..\..\packages\SkiaSharp.Views.1.68.1.1\lib\MonoAndroid\SkiaSharp.Views.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Forms">
+      <HintPath>..\..\packages\SkiaSharp.Views.Forms.1.68.1.1\lib\MonoAndroid\SkiaSharp.Views.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers">
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <ProjectReference Include="..\NineWavesApp\NineWavesApp.fsproj">
       <Name>NineWavesApp</Name>
