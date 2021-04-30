@@ -117,7 +117,7 @@ let setPackageOpts version (opts: DotNet.PackOptions) =
           NoLogo = true
           NoBuild = true
           OutputPath = Some packageOutputPath
-          IncludeSymbols = true
+          IncludeSymbols = false
           Configuration = release
           Common =
               { commonDotNetOpts with
