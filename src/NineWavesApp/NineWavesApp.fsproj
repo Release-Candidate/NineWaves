@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Fabulous-Temp.fs" />
+    <Compile Include="Definitions.fs" />
+    <Compile Include="Style.fs" />
+    <Compile Include="Update.fs" />
+    <Compile Include="NineWavePage.fs" />
+    <Compile Include="View.fs" />
+    <Compile Include="App.fs" />
   </ItemGroup>
   
   <ItemGroup>
@@ -19,5 +24,9 @@
     <PackageReference Include="FSharp.Core" Version="5.0.0" />
     <PackageReference Update="FSharp.Core" Version="5.0.1" /> <!-- workaround for VSMac bug https://github.com/mono/monodevelop/pull/5137 --> 
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\NineWaves\NineWaves.fsproj" />
   </ItemGroup>
 </Project>
