@@ -1,4 +1,4 @@
-# ![NineWaves Icon](./src/Android/Resources/mipmap-hdpi/icon.png) NineWaves <!-- omit in toc -->
+# ![NineWaves Icon](./src/NineWaves.Android/Resources/mipmap-hdpi/icon.png) NineWaves <!-- omit in toc -->
 
 This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. See [Links](#links)
 

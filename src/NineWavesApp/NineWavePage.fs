@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  App
+// Project:  NineWavesApp
 // File:     NineWavePage.fs
 // Date:     4/29/2021 8:40:08 PM
 //==============================================================================

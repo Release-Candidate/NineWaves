@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright (C) 2021 Roland Csaszar
 //
-// Project:  NineWaves
+// Project:  NineWavesApp
 // File:     Style.fs
 // Date:     4/10/2021 8:38:40 PM
 //==============================================================================
