@@ -33,3 +33,4 @@ paket-files/
 
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
+/Output-XamarinDiagnostics.txt
