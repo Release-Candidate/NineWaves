@@ -7,5 +7,4 @@
 # Date:     27.Apr.2021
 ###############################################################################
 
-
 dotnet test -v n /p:AltCover=true /p:AltCoverReportFormat=OpenCover /p:AltCoverReport=./coverage.xml

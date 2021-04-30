@@ -14,7 +14,6 @@
 # Path to the changelog to parse
 CHANGELOG_PATH="../CHANGELOG.md"
 
-
 LINE_NUMS=$(grep '##' ${CHANGELOG_PATH} -n| head -2|cut -f1 -d":"|paste -s -d' ')
 
 LINE_NUM_ARRAY=(${LINE_NUMS})

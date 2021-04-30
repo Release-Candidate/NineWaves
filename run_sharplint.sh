@@ -9,5 +9,4 @@
 
 # install dotnet tool install -g dotnet-fsharplint
 
-
 dotnet fsharplint lint NineWaves.sln
