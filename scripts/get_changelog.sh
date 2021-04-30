@@ -8,6 +8,7 @@
 #
 ################################################################################
 
+
 # Returns the newest part of the changelog `CHANGELOG.md`.
 # For use with automatic releases.
 
