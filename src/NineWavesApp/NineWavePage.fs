@@ -51,18 +51,23 @@ module NineWavePage=
                 )
             ) ]
 
+    let daysToYears (days: int64) =
+        match days with
+        | i when i < 365L -> sprintf "%dd" i
+        | _ ->  sprintf "%da" (int64 <| float days / 365.25)
+
     let formatWaveDay (waveDay: NineWaves.WaveDay) waveNum =
-       [ View.Span ( text = (sprintf "%d. Wave %d:" waveDay.WaveNumber waveNum),
+       [ View.Span ( text = (sprintf "onda %d: " (*waveDay.WaveNumber*) waveNum),
                     fontAttributes = FontAttributes.Bold,
                     fontSize = FontSize.fromValue 18.,
                     lineHeight = 1.8,
                     textColor = Color.Black
          )
          View.Span ( text = (sprintf
-                                "%s %d / %d\n"
-                                (if waveDay.IsNight then "Night" else "Day")
-                                waveDay.DayNumber
-                                waveDay.OfDays
+                                "%s, %s / %s\n"
+                                (if waveDay.IsNight then "noche" else "día")
+                                (daysToYears waveDay.DayNumber)
+                                (daysToYears waveDay.OfDays)
                                 ),
                     fontAttributes = FontAttributes.Bold,
                     fontSize = FontSize.fromValue 18.,
@@ -154,14 +159,4 @@ module NineWavePage=
                   tzolkinCard model dispatch model.Date
                   tzolkinCard model dispatch model.Date ]
             )
-
-          View.Label (
-                text = versionInfo,
-                fontSize = FontSize.fromNamedSize NamedSize.Micro,
-                textColor = Style.foregroundColor model.IsDarkMode,
-                backgroundColor = Style.backgroundBrownDark,//Style.backgroundColor model.IsDarkMode,
-                verticalTextAlignment = TextAlignment.End,
-                horizontalTextAlignment = TextAlignment.End,
-                horizontalOptions = LayoutOptions.Fill,
-                verticalOptions = LayoutOptions.Fill
-            ) ]
+         ]

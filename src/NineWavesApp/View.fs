@@ -24,20 +24,43 @@ module View =
     /// <param name="model">The MVU model.</param>
     /// <param name="dispatch">The message dispatch function.</param>
     /// <returns>The page instance of the first page.</returns>
-    let homePage model dispatch =
+    let waveCalendar model dispatch =
         View
-            .ContentPage(title = "Calendario",
+            .ContentPage(title = "Onda",
                          backgroundColor = Style.backgroundColor model.IsDarkMode,
                          appearing = (fun () -> dispatch <| SetCurrentPage Home),
                          content = View.StackLayout (
                              backgroundColor = Style.backgroundBrownDark,
-                             children = nineWavePage model dispatch
+                             children = waveView model dispatch
                          )
 
 
             )
             .HasNavigationBar(true)
             .HasBackButton (false)
+
+    /// <summary>
+    /// The calendar page of the app.
+    /// </summary>
+    /// <param name="model">The MVU model.</param>
+    /// <param name="dispatch">The message dispatch function.</param>
+    /// <returns>The page instance of the first page.</returns>
+    let graphPage model dispatch =
+        View
+            .ContentPage(title = "Calendario",
+                        backgroundColor = Style.backgroundColor model.IsDarkMode,
+                        appearing = (fun () -> dispatch <| SetCurrentPage Waves),
+                        content = View.StackLayout (
+                            backgroundColor = Style.backgroundBrownDark,
+                            horizontalOptions = LayoutOptions.FillAndExpand,
+                            verticalOptions = LayoutOptions.FillAndExpand,
+                            children = nineWavePage model dispatch
+                        )
+
+
+            )
+            .HasNavigationBar(true)
+            .HasBackButton (true)
 
     /// <summary>
     /// The view of MVU.
@@ -57,5 +80,7 @@ module View =
             barTextColor = tabForegroundColor,
             pages =
                 match model.CurrentPage with
-                | Home -> [ homePage model dispatch ]
+                | Home -> [ waveCalendar model dispatch ]
+                | Waves -> [ waveCalendar model dispatch
+                             graphPage model dispatch ]
         )

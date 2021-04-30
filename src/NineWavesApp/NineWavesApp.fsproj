@@ -11,6 +11,7 @@
     <Compile Include="Style.fs" />
     <Compile Include="Update.fs" />
     <Compile Include="NineWavePage.fs" />
+    <Compile Include="WaveView.fs" />
     <Compile Include="View.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>

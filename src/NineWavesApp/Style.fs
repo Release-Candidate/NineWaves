@@ -23,9 +23,15 @@ module Style =
 
     let backgroundBrownDark = Color.FromHex "#BFAB91"
 
+    let backgroundBrownDarkSK = SkiaSharp.SKColor.Parse "#BFAB91"
+
     let backgroundBrown = Color.FromHex "#F2D8B8"
 
+    let backgroundBrownSK = SkiaSharp.SKColor.Parse "#F2D8B8"
+
     let backgroundBrownLight = Color.FromHex "#F6DCBC"
+
+    let backgroundBrownLightSK = SkiaSharp.SKColor.Parse "#F6DCBC"
 
     let backgroundNone = Color.Default
 
@@ -38,6 +44,8 @@ module Style =
     let foregroundDark = Color.WhiteSmoke
 
     let accentDarkRed = Color.FromHex "#8B2A02"
+
+    let accentDarkRedSK = SkiaSharp.SKColor.Parse "#8B2A02"
 
     let linkColorBlue = Color.Blue
 

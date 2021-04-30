@@ -76,6 +76,7 @@ module Definitions =
     /// The pages of the App.
     type Pages =
         | Home
+        | Waves
 
     /// The MVU model.
     type Model =
