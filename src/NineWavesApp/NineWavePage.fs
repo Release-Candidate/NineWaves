@@ -52,32 +52,37 @@ module NineWavePage=
             ) ]
 
     let formatWaveDay (waveDay: NineWaves.WaveDay) waveNum =
-        View.Span ( text = (sprintf
-                                "Wave %d: %d %s %d (%d)"
-                                waveNum
-                                waveDay.WaveNumber
-                                (if waveDay.IsNight then "Night" else "day")
+       [ View.Span ( text = (sprintf "%d. Wave %d:" waveDay.WaveNumber waveNum),
+                    fontAttributes = FontAttributes.Bold,
+                    fontSize = FontSize.fromValue 18.,
+                    lineHeight = 1.8,
+                    textColor = Color.Black
+         )
+         View.Span ( text = (sprintf
+                                "%s %d / %d\n"
+                                (if waveDay.IsNight then "Night" else "Day")
                                 waveDay.DayNumber
                                 waveDay.OfDays
                                 ),
                     fontAttributes = FontAttributes.Bold,
-                    fontSize = FontSize.fromValue 20.,
-                    textColor = Color.Black
-        )
+                    fontSize = FontSize.fromValue 18.,
+                    lineHeight = 1.8,
+                    textColor = accentDarkRed
+        ) ]
 
     let formatWaveDayDescriptions date dispatch =
         View.FormattedString (
-            [   formatWaveDay (NineWaves.getWaveday9 date) 9
-                formatWaveDay (NineWaves.getWaveday8 date) 8
-                formatWaveDay (NineWaves.getWaveday7 date) 7
-                formatWaveDay (NineWaves.getWaveday6 date) 6
-                formatWaveDay (NineWaves.getWaveday5 date) 5
-                formatWaveDay (NineWaves.getWaveday4 date) 4
-                formatWaveDay (NineWaves.getWaveday3 date) 3
-                formatWaveDay (NineWaves.getWaveday2 date) 2
-                formatWaveDay (NineWaves.getWaveday1 date) 1
-                View.Span "\n  "
-            ]
+               formatWaveDay (NineWaves.getWaveday9 date) 9 @
+               formatWaveDay (NineWaves.getWaveday8 date) 8 @
+               formatWaveDay (NineWaves.getWaveday7 date) 7 @
+               formatWaveDay (NineWaves.getWaveday6 date) 6 @
+               formatWaveDay (NineWaves.getWaveday5 date) 5 @
+               formatWaveDay (NineWaves.getWaveday4 date) 4 @
+               formatWaveDay (NineWaves.getWaveday3 date) 3 @
+               formatWaveDay (NineWaves.getWaveday2 date) 2 @
+               formatWaveDay (NineWaves.getWaveday1 date) 1 @
+               [ View.Span "\n  " ]
+
         )
 
 
