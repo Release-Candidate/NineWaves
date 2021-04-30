@@ -32,6 +32,7 @@ let exeOutPath = "bin" // dotnet publish into this
 
 // set absolute output paths ===================================================
 let rootDirAbs = Path.getFullName "." // current working dir, absolute
+let nugetAbs = Path.combine rootDirAbs packageOutputPath
 let testOutAbs = Path.combine rootDirAbs testOutputPath // test result dir, absolute
 let coverageFile = Path.combine testOutAbs "coverage.xml" // absolute path to coverage file
 
@@ -39,7 +40,8 @@ let coverageFile = Path.combine testOutAbs "coverage.xml" // absolute path to co
 
 // projects to build, this should be all projects ...
 let buildProjs =
-    !! "src/Fabulous-TEMPLATE/*.*proj" ++ "tests/**/*.*proj"
+    !! "src/NineWaves/*.*proj"
+    ++ "tests/**/*.*proj"
 
 // projects to test / test projects in `tests`, not the ones in `src`
 let testProjs = !! "tests/**/*.*proj"
@@ -48,7 +50,7 @@ let testProjs = !! "tests/**/*.*proj"
 let coverageProjs = testProjs
 
 // projects to generate Nuget packages of
-let packageProjs = !! "src/Fabulous-TEMPLATE/*.*proj"
+let packageProjs = !! "src/NineWaves/*.*proj"
 
 // projects to publish (`dotnet publish`)
 let publishProjs = !! "tests/**/*.*proj"
@@ -64,7 +66,6 @@ let lintProjs =
 let commonDotNetOpts = DotNet.Options.Create()
 
 let commonBuildOpts = commonDotNetOpts
-
 
 let uploadOpts = NuGet.NuGetPushParams.Create()
 let release = DotNet.BuildConfiguration.Release
@@ -116,7 +117,7 @@ let setPackageOpts version (opts: DotNet.PackOptions) =
           NoLogo = true
           NoBuild = true
           OutputPath = Some packageOutputPath
-          IncludeSymbols = false
+          IncludeSymbols = true
           Configuration = release
           Common =
               { commonDotNetOpts with
@@ -329,7 +330,7 @@ Target.create
     "Publish"
     (fun _ ->
         publishProjs
-        |> Seq.iter (DotNet.publish (setPublishOptions (getRID ()) ) ) )
+        |> Seq.iter (DotNet.publish (setPublishOptions (getRID ()))))
 
 
 //==============================================================================
@@ -370,11 +371,7 @@ Target.create "Release" ignore
 
 "Clean" ==> "Build" ==> "Lint"
 
-"Clean"
-==> "Build"
-==> "Packages"
-==> "Upload"
-==> "Release"
+"Clean" ==> "Build" ==> "Packages" ==> "Upload" ==> "Release"
 
 "Clean" ==> "Build" ==> "Docs" ==> "Release"
 
