@@ -150,6 +150,11 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NineWavesApp\NineWavesApp.fsproj">
+      <Name>NineWavesApp</Name>
+      <Project>{105885ab-2da7-4c59-83ab-b676cd77193b}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <Reference Include="Fabulous">
       <HintPath>..\..\packages\Fabulous.1.0.1\lib\netstandard2.0\Fabulous.dll</HintPath>
     </Reference>
