@@ -241,6 +241,12 @@ module WaveView=
                 backgroundColor = backgroundBrown,
                 horizontalOptions = LayoutOptions.FillAndExpand,
                 verticalOptions = LayoutOptions.FillAndExpand,
+                gestureRecognizers =
+                    [ View.PanGestureRecognizer (touchPoints=1,
+                        panUpdated=(fun panArgs ->
+                            if panArgs.StatusType = GestureStatus.Running then
+                                dispatch (SetDate (model.Date - TimeSpan.FromDays (panArgs.TotalX/100.) )))
+                      ) ],
                 paintSurface = (fun args ->
                     let info = args.Info
                     let surface = args.Surface
