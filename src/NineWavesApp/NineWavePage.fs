@@ -30,7 +30,7 @@ module NineWavePage=
     /// <returns>A list of `Frame` to show the Tzolk’in date of the date
     /// selected in the second Frame.</returns>
     let dateSelector model dispatch date =
-        [ View.Frame (
+        View.Frame (
             backgroundColor = backgroundBrownLight,
             borderColor = backgroundBrownDark,
             hasShadow = true,
@@ -49,7 +49,7 @@ module NineWavePage=
                     fontSize = Style.normalFontSize,
                     horizontalOptions = LayoutOptions.EndAndExpand
                 )
-            ) ]
+            )
 
     let daysToYears (days: int64) =
         match days with
@@ -121,11 +121,20 @@ module NineWavePage=
                               backgroundColor = Style.backgroundBrown,
                               children =
                                   [ View.StackLayout (
-                                      padding = Thickness (5.0, 10.0, 5.0, 10.0),
                                       orientation = setVerticalIfLandscape model.IsLandscape,
-                                      backgroundColor = Style.backgroundBrown,
-                                      horizontalOptions = LayoutOptions.Center,
-                                      children = dateSelector model dispatch date
+                                      backgroundColor = backgroundBrown,
+                                      padding = Thickness (5., 10., 10., 0.),
+                                      children = [
+                                          View.Button (
+                                              text = "Onda",
+                                              backgroundColor = backgroundBrownLight,
+                                              borderWidth = 1.,
+                                              fontSize = normalFontSize,
+                                              padding = Thickness (10., 10.),
+                                              borderColor = backgroundBrownDark,
+                                              command = (fun _ -> SetCurrentPage Home |> dispatch)
+                                              )
+                                          dateSelector model dispatch model.Date ]
                                     )
 
                                     //  separator model.IsLandscape model.IsDarkMode

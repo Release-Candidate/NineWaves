@@ -30,13 +30,15 @@ module View =
                          backgroundColor = Style.backgroundColor model.IsDarkMode,
                          appearing = (fun () -> dispatch <| SetCurrentPage Home),
                          content = View.StackLayout (
+                             padding = Thickness 0.,
+                             spacing = 0.,
                              backgroundColor = Style.backgroundBrownDark,
                              children = waveView model dispatch
                          )
 
 
             )
-            .HasNavigationBar(true)
+            .HasNavigationBar(false)
             .HasBackButton (false)
 
     /// <summary>

@@ -47,6 +47,8 @@ module Style =
 
     let accentDarkRedSK = SkiaSharp.SKColor.Parse "#8B2A02"
 
+    let blackSK = SkiaSharp.SKColors.Black
+
     let linkColorBlue = Color.Blue
 
     let linkSymbol = "\U0001F517"
