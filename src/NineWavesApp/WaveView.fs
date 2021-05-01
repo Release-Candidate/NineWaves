@@ -22,6 +22,8 @@ open RC.Maya
 [<AutoOpen>]
 module WaveView=
 
+    let mutable panDate = DateTime.Today
+
     let drawText
         (args: SkiaSharp.Views.Forms.SKPaintSurfaceEventArgs)
         (x: float32)
@@ -245,7 +247,10 @@ module WaveView=
                     [ View.PanGestureRecognizer (touchPoints=1,
                         panUpdated=(fun panArgs ->
                             if panArgs.StatusType = GestureStatus.Running then
-                                dispatch (SetDate (model.Date - TimeSpan.FromDays (panArgs.TotalX/100.) )))
+                                dispatch (SetDate (panDate - TimeSpan.FromDays (panArgs.TotalX/10.)))
+                            elif panArgs.StatusType = GestureStatus.Started then
+                                panDate <- model.Date
+                                )
                       ) ],
                 paintSurface = (fun args ->
                     let info = args.Info
