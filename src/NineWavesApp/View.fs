@@ -19,14 +19,13 @@ open Xamarin.Essentials
 module View =
 
     /// <summary>
-    /// The first page of the app.
+    /// The first page of the app, showing graphs of the 9th, 8th and 7th wave.
     /// </summary>
     /// <param name="model">The MVU model.</param>
     /// <param name="dispatch">The message dispatch function.</param>
     /// <returns>The page instance of the first page.</returns>
-    let waveCalendar model dispatch =
-        View
-            .ContentPage(title = "Onda",
+    let graphPage model dispatch =
+        View.ContentPage(title = "Onda",
                          backgroundColor = Style.backgroundColor model.IsDarkMode,
                          appearing = (fun () -> dispatch <| SetCurrentPage Home),
                          content = View.StackLayout (
@@ -42,14 +41,13 @@ module View =
             .HasBackButton (false)
 
     /// <summary>
-    /// The calendar page of the app.
+    /// The calender page of the app, showing the dates of each of the 9 waves.
     /// </summary>
     /// <param name="model">The MVU model.</param>
     /// <param name="dispatch">The message dispatch function.</param>
     /// <returns>The page instance of the first page.</returns>
-    let graphPage model dispatch =
-        View
-            .ContentPage(title = "Calendario",
+    let waveCalendar  model dispatch =
+        View.ContentPage(title = "Calendario",
                         backgroundColor = Style.backgroundColor model.IsDarkMode,
                         appearing = (fun () -> dispatch <| SetCurrentPage Waves),
                         content = View.StackLayout (
@@ -82,7 +80,7 @@ module View =
             barTextColor = tabForegroundColor,
             pages =
                 match model.CurrentPage with
-                | Home -> [ waveCalendar model dispatch ]
-                | Waves -> [ waveCalendar model dispatch
-                             graphPage model dispatch ]
+                | Home -> [ graphPage model dispatch ]
+                | Waves -> [ graphPage model dispatch
+                             waveCalendar model dispatch ]
         )

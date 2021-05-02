@@ -6,8 +6,7 @@
 //
 //==============================================================================
 
-/// The namespace of the IOS and Android NineWaves
-/// app.
+/// The namespace of the IOS and Android NineWaves app.
 namespace NineWavesApp
 
 open System.Diagnostics

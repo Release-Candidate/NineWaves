@@ -18,17 +18,13 @@ open RC.Maya
 [<AutoOpen>]
 module NineWavePage=
 
-
-
     /// <summary>
-    /// Show the Tzolk’in date on the left and a date picker to select the date
-    /// to display on the right.
+    /// Show a date picker to select the date to display.
     /// </summary>
     /// <param name="model">The MVU model.</param>
     /// <param name="dispatch">The message dispatch function</param>
-    /// <param name="date">The gregorian date to display as a Tzolk’in date.</param>
-    /// <returns>A list of `Frame` to show the Tzolk’in date of the date
-    /// selected in the second Frame.</returns>
+    /// <param name="date">The date to display information about</param>
+    /// <returns>The `Frame` containing the `DatePicker`.</returns>
     let dateSelector model dispatch date =
         View.Frame (
             backgroundColor = backgroundBrownLight,
@@ -51,17 +47,26 @@ module NineWavePage=
                 )
             )
 
+    /// <summary>Convert days to years.</summary>
+    /// <param name="days">The number of days to convert to years</param>
+    /// <returns>The days as years.</returns>
     let daysToYears (days: int64) =
         match days with
         | i when i < 365L -> sprintf "%dd" i
         | _ ->  sprintf "%da" (int64 <| float days / 365.25)
 
+    /// <summary>
+    /// Format the information of one wave for use in a label.
+    /// </summary>
+    /// <param name="waveDay">The `WaveDay` instance to display.</param>
+    /// <param name="waveNum">The number of the wave, one of 1 to 9.</param>
+    /// <returns></returns>
     let formatWaveDay (waveDay: NineWaves.WaveDay) waveNum =
        [ View.Span ( text = (sprintf "onda %d: " (*waveDay.WaveNumber*) waveNum),
                     fontAttributes = FontAttributes.Bold,
-                    fontSize = FontSize.fromValue 18.,
-                    lineHeight = 1.8,
-                    textColor = Color.Black
+                    fontSize = Style.waveInfoTextSize,
+                    lineHeight = Style.waveInfoLineHeigt,
+                    textColor = Style.foregroundLight
          )
          View.Span ( text = (sprintf
                                 "%s, %s / %s\n"
@@ -70,11 +75,17 @@ module NineWavePage=
                                 (daysToYears waveDay.OfDays)
                                 ),
                     fontAttributes = FontAttributes.Bold,
-                    fontSize = FontSize.fromValue 18.,
-                    lineHeight = 1.8,
-                    textColor = accentDarkRed
+                    fontSize = Style.waveInfoTextSize,
+                    lineHeight = Style.waveInfoLineHeigt,
+                    textColor = Style.accentDarkRed
         ) ]
 
+    /// <summary>
+    /// Format the information of all 9 waves of the current date.
+    /// </summary>
+    /// <param name="date">The date to display the waves information of.</param>
+    /// <param name="dispatch">The message dispatch function</param>
+    /// <returns>A list of `Span`, usable to display in a label.</returns>
     let formatWaveDayDescriptions date dispatch =
         View.FormattedString (
                formatWaveDay (NineWaves.getWaveday9 date) 9 @
@@ -92,16 +103,15 @@ module NineWavePage=
 
 
     /// <summary>
-    /// Display a `Frame` containing the Tzolk’in date, the gregorian date and
-    /// the Tzolk’in day glyph description of the gregorian date selected with
-    /// the date picker.
+    /// Display a `Frame` containing a button to switch to the graph page, a
+    /// date picker to sect the day to display and information about all 9 waves.
     /// </summary>
     /// <param name="model">The MVU model.</param>
     /// <param name="dispatch">The message dispatch function</param>
-    /// <param name="date">The gregorian date to display as Tzolk’in date.</param>
-    /// <returns>A `StackLayout` holding the Tzolk’in date, the gregorian date and
-    /// the Tzolk’in day glyph description of the gregorian date selected with
-    /// the date picker.</returns>
+    /// <param name="date">The date to display information about.</param>
+    /// <returns>A `StackLayout` holding a button to switch to the graph page,
+    /// the `DatePicker` to select the date to show information of and
+    /// a `Label` with information about all nine waves.</returns>
     let tzolkinCard model dispatch date =
         View.StackLayout (
             horizontalOptions = LayoutOptions.Center,
@@ -148,8 +158,8 @@ module NineWavePage=
                   ) ]
         )
 
-    /// Display the date view page, the Tzolk’in day information in a carousel
-    /// view of consecutive days.
+    /// Display the date view page, the information about the nine waves at a
+    /// date in a carousel view of consecutive days.
     ///
     /// <param name="model">The MVU model.</param>
     /// <param name="dispatch">The message dispatch function</param>

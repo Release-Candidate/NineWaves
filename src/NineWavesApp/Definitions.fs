@@ -19,9 +19,6 @@ open System
 open System.Reflection
 open Svg.Skia
 
-open RC.Maya
-
-
 
 /// Holds the most basic definitions, the MVU model type `Model`, the MVU message type `Msg`,
 /// the MVU `init` and `update` functions.
@@ -97,11 +94,6 @@ module Definitions =
         | OpenURL of string
         | SetDate of DateTime
         | CarouselChanged of PositionChangedEventArgs
-
-    // Widget references ===========================================================================
-    // Instances of widgets needed to interact with.
-
-
 
     // Commands ====================================================================================
     /// <summary>

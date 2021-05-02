@@ -92,6 +92,7 @@ module Style =
 
     let tabForegroundColor = Color.Black
 
+
     /// <summary>
     /// Separator line.
     /// </summary>
@@ -115,3 +116,26 @@ module Style =
                 width = 0.5,
                 verticalOptions = LayoutOptions.FillAndExpand
             )
+
+
+    // Graph page ==============================================================
+
+    let graphStrokeWidth = 5.f * float32 screenDensity //  15.0f
+
+    let axisStrokeWidth = 3.5f * float32 screenDensity // 10.0f
+
+    let pointStrokeWidth = 3.f * float32 screenDensity // 7.5f
+
+    let graphTextSize = 15.f * float32 screenDensity // 45.f
+
+    let dotCirceRadius = 6.f * float32 screenDensity // 15.f
+
+    let innerDotCircleRadius = 3.f * float32 screenDensity //7.5f
+
+    let panSpeedInverse = 4. * screenDensity // 10.
+
+    // 9 wave page =============================================================
+
+    let waveInfoTextSize = FontSize.fromValue 18.
+
+    let waveInfoLineHeigt = 1.8
