@@ -203,9 +203,9 @@ The sources of the projects are located in the directors `src`, the tests in `te
 There are 4 projects in NineWaves:
 
 - `NineWaves` - the F# library and NuGet package that does the actual calculations, see [NuGet Package](./nuget_package.md) for usage information.
-- `App` - the NineWaves smartphone app, the platform independent part of the smartphone app.
+- `NineWavesApp` - the NineWaves smartphone app, the platform independent part of the smartphone app.
 - `IOS` - the iOS specific part of the smartphone app.
-- `Android` - the Android specific part of the app.
+- `NineWaves.Android` - the Android specific part of the app.
 
 #### Test Source
 
@@ -213,7 +213,7 @@ The project `TestNineWaves` in the directory `tests/TestNineWaves`: tests the Nu
 Files:
 
 - `TestMain.fs` - Expecto's main entry point when called as an executable and not by using `dotnet test`.
-- `Generics.fs` - generic functions used by the actual test functions.
+- `TestNineWaves.fs` - The actual test functions to test the package.
 
 ### Build Targets
 

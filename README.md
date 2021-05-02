@@ -1,10 +1,15 @@
 # ![NineWaves Icon](./src/NineWaves.Android/Resources/mipmap-hdpi/icon.png) NineWaves <!-- omit in toc -->
 
-This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. See [Links](#links)
+This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. See [Links](#links). It uses [Fabulous](https://fsprojects.github.io/Fabulous/Fabulous.XamarinForms/) as F# MVU (Elm-like) frontend to Xamarin.Forms.
+
+See [YouTube video of the smartphone app](https://youtu.be/JFMrXIghLK4) for a video.
+
+![Screenshot 1 of the smartphone app](./docs/images/Screenshot_1619956923.png)
+![Screenshot 2 of the smartphone app](./docs/images/Screenshot_1619956948.png)
 
 Information about the smartphone app is at [Usage of the Smartphone App](#usage-of-the-smartphone-app)
 
-To interactively try out the F# NuGet package NineWaves, go to the Jupyter Notebook
+To interactively try out the F# NuGet package NineWaves, go to the Jupyter Notebook at [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Release-Candidate/NineWaves/main?filepath=NineWaves.ipynb)
 
 Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs.io/en/latest/)
 
@@ -13,6 +18,7 @@ Full documentation can be found at [Read the Docs](https://NineWaves.readthedocs
 [![OS badge](https://img.shields.io/badge/Runs%20on-Linux%7COS%20X%7CWindows%7CAndroid%7CIOS-brightgreen?style=flat)](https://dotnet.microsoft.com/download)
 [![Nuget Package badge](https://img.shields.io/nuget/v/NineWaves)](https://www.nuget.org/packages/NineWaves/)
 [![Documentation Status](https://readthedocs.org/projects/ninewaves/badge/?version=latest)](https://ninewaves.readthedocs.io/en/latest/?badge=latest)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Release-Candidate/NineWaves/main?filepath=NineWaves.ipynb)
 [more badges ...](#badges)
 
 ## Table of Content <!-- omit in toc -->

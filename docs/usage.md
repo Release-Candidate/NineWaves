@@ -18,4 +18,15 @@ Download the latest release: [Release at GitHub](https://github.com/Release-Cand
 
 ## Usage of the Smartphone App
 
-See [YouTube video of the smartphone app](https://www.youtube.com/watch?v=os32KCEqGCk) for a video.
+See [YouTube video of the smartphone app](https://youtu.be/JFMrXIghLK4) for a video.
+
+Screenshots:
+
+![Screenshot 1 of the smartphone app](./images/Screenshot_1619956923.png)
+![Screenshot 2 of the smartphone app](./images/Screenshot_1619956948.png)
+![Screenshot 3 of the smartphone app](./images/Screenshot_1619956958.png)
+![Screenshot 4 of the smartphone app](./images/Screenshot_1619956972.png)
+![Screenshot 5 of the smartphone app](./images/Screenshot_1619956975.png)
+![Screenshot 6 of the smartphone app](./images/Screenshot_1619956980.png)
+![Screenshot 7 of the smartphone app](./images/Screenshot_1619956997.png)
+![Screenshot 8 of the smartphone app](./images/Screenshot_1619957006.png)

@@ -71,6 +71,19 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "NineWavesApp", "src\NineWav
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NineWaves.Android", "src\NineWaves.Android\NineWaves.Android.fsproj", "{42966102-9121-4418-A7F8-470727490557}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4133BEB5-8E86-40AF-9454-61EA32CB89E5}"
+	ProjectSection(SolutionItems) = preProject
+		docs\images\nuget_icon.png = docs\images\nuget_icon.png
+		docs\images\Screenshot_1619956923.png = docs\images\Screenshot_1619956923.png
+		docs\images\Screenshot_1619956948.png = docs\images\Screenshot_1619956948.png
+		docs\images\Screenshot_1619956958.png = docs\images\Screenshot_1619956958.png
+		docs\images\Screenshot_1619956972.png = docs\images\Screenshot_1619956972.png
+		docs\images\Screenshot_1619956975.png = docs\images\Screenshot_1619956975.png
+		docs\images\Screenshot_1619956980.png = docs\images\Screenshot_1619956980.png
+		docs\images\Screenshot_1619956997.png = docs\images\Screenshot_1619956997.png
+		docs\images\Screenshot_1619957006.png = docs\images\Screenshot_1619957006.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -257,6 +270,7 @@ Global
 		{EB31379E-DFF2-4E69-AAE2-84E0D2A06C84} = {37D4984B-C991-4338-A021-A76D810D4993}
 		{70ECD8AB-C135-4E34-9CA8-C25F215C4874} = {EB31379E-DFF2-4E69-AAE2-84E0D2A06C84}
 		{D86D21E0-3A27-4E09-851B-E6CE60BA1FA9} = {37D4984B-C991-4338-A021-A76D810D4993}
+		{4133BEB5-8E86-40AF-9454-61EA32CB89E5} = {D070E4B1-CC06-4705-8F5D-981A2EDBAB22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B206444E-BC51-4675-B1D1-8317ED549832}

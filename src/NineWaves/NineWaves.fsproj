@@ -28,7 +28,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>NineWaves</PackageId>
     <PackageLicenseFile></PackageLicenseFile>
-    <PackageProjectUrl>https://ninewaves.readthedocs.io/en/latest/</PackageProjectUrl>
+    <PackageProjectUrl>https://ninewaves.readthedocs.io/en/latest/nuget_package/</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -40,7 +40,7 @@
     <Copyright>(c) 2021 Roland Csaszar</Copyright>
     <PackageIcon>nuget_icon.png</PackageIcon>
     <PackageTags>NineWaves</PackageTags>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageReleaseNotes>Added  pan-able wave graph page.</PackageReleaseNotes>
     <Description>NineWaves is a F# library to calculate with the nine Maya waves of Carl Johan Calleman</Description>
   </PropertyGroup>
   <ItemGroup>

@@ -1,13 +1,13 @@
 # ![NineWaves Logo](./images/nuget_icon.png) NineWaves
 
-This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman.
+This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. It uses [Fabulous](https://fsprojects.github.io/Fabulous/Fabulous.XamarinForms/) as F# MVU (Elm-like) frontend to Xamarin.Forms.
 
 If you want to know more about the Maya calendar systems, see [Links](#links).
 
 Information about the smartphone app is at [Usage of the Smartphone App](./usage.md)
 
 Information about the usage of the F# NuGet library NineWaves you find at [NuGet Package](./nuget_package.md).
-To interactively try out the F# NuGet package NineWaves, go to the Jupyter Notebook at 
+To interactively try out the F# NuGet package NineWaves, go to the Jupyter Notebook at [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Release-Candidate/NineWaves/main?filepath=NineWaves.ipynb)
 
 [Contributing](./contributing.md) has information about how to contribute to NineWaves, by
 filing bug reports or feature requests, to contributing source code, to adding documentation
