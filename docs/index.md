@@ -2,7 +2,12 @@
 
 This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. It uses [Fabulous](https://fsprojects.github.io/Fabulous/Fabulous.XamarinForms/) as F# MVU (Elm-like) frontend to Xamarin.Forms.
 
-If you want to know more about the Maya calendar systems, see [Links](#links).
+If you want to know more about the nine Maya waves, see [Links](#links).
+
+See [YouTube video of the smartphone app](https://youtu.be/JFMrXIghLK4) for a video.
+
+![Screenshot 1 of the smartphone app](./images/Screenshot_1619956923.png)
+![Screenshot 2 of the smartphone app](./images/Screenshot_1619956948.png)
 
 Information about the smartphone app is at [Usage of the Smartphone App](./usage.md)
 
