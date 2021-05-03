@@ -70,7 +70,7 @@ In an interactive F# FSI session, you can use the command `#r "nuget: NineWaves"
 
 ### Usage of the Smartphone App
 
-See [YouTube video of the smartphone app](https://www.youtube.com/watch?v=os32KCEqGCk) for a video.
+See [YouTube video of the smartphone app](https://www.youtube.com/watch?v=JFMrXIghLK4) for a video.
 
 ### NineWaves NuGet Package
 
