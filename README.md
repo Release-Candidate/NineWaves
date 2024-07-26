@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository has been moved to [CodeBerg: NineWaves](https://codeberg.org/Release-Candidate/NineWaves)
+
 # ![NineWaves Icon](./src/NineWaves.Android/Resources/mipmap-hdpi/icon.png) NineWaves <!-- omit in toc -->
 
 This cross platform - Linux, Mac OS X and Windows - F# .Net library and smartphone app to chart the nine Maya waves of Carl Johan Calleman. See [Links](#links). It uses [Fabulous](https://fsprojects.github.io/Fabulous/Fabulous.XamarinForms/) as F# MVU (Elm-like) frontend to Xamarin.Forms.
